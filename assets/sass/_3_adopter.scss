@@ -1,0 +1,50 @@
+#adopter{
+	.side_nav {
+		z-index: 1;
+		background-color: $bleu_fonce;
+		padding-right: 0;
+		h3, h4,  li, a {
+			color: white;
+		}
+		.link ul {
+			margin-top: 70%;
+			list-style: none;
+			padding-left: 0px;
+	    	li {
+    		    margin: 15px 0px;
+    		    padding: 5px 0px;
+				height: 100%;
+	    		//span{
+	    		//	float: right;
+	    		//	margin-right: -4px;
+	    		//}
+	    		a{
+	    			margin-left: 15px;
+	    		}
+	    	}
+	    	li:hover{
+				z-index: 2;
+				background-image: url(../images/help_css/Pastille_menu_01.png);
+				background-size: cover;
+
+			}
+		}
+		.logo{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.block_patchwork{
+		z-index: 0;
+		overflow: scroll;
+		.row{
+			img{
+				width: 100%;
+			}
+			.col-md-4{
+				padding: 0px 0px;
+			}
+		}
+	}
+}

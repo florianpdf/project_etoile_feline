@@ -1,0 +1,45 @@
+#notre_histoire{
+	.side_nav {
+		background-color: $bleu_fonce;
+		h3, h4,  li, a {
+			color: white;
+		}
+		.link ul {
+			margin-top: 70%;
+			list-style: none;
+			padding-left: 0px;
+	    	li {
+    		    margin: 15px 0px;
+    		    padding: 5px 0px;
+	    		span{
+	    			float: right;
+	    			margin-right: -4px;
+	    		}
+	    		a{
+	    			margin-left: 15px;
+	    		}
+	    	}
+	    	li:hover{
+	    		background-color: $rose;
+	    	}
+		}
+		.logo{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.image_side_nav{
+		margin-top: 20px;
+		img{
+			width: 100%;
+		}
+	}
+	.block_text {
+		overflow: scroll;	
+		.row{
+			@include block_text();
+		}		
+	}
+
+}

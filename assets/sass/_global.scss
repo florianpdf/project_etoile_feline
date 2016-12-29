@@ -1,0 +1,98 @@
+/************************************************\
+==================================================
+1. Global css
+2. Header css
+3. Slider css
+4. Footer css
+==================================================
+\************************************************/
+
+/************************************************\
+==================================================
+COULEUR // FONT
+==================================================
+\************************************************/
+
+$rose: rgb(234, 92, 100);
+$bleu_fonce: rgba(55, 62, 72, 0.90);
+$blanc_menu: rgb(234, 235, 237);
+
+/************************************************\
+==================================================
+MIXIN
+==================================================
+\************************************************/
+
+@mixin custom_border_bottom(){
+	border-bottom: 5px solid transparent;
+	-webkit-border-image: url(../images/help_css/trait_header_01.png) 30 round repeat; /* Safari 3.1-5 */
+    -o-border-image: url(../images/help_css/trait_header_01.png) 30 round repeat; /* Opera 11-12.1 */
+    border-image: url(../images/help_css/trait_header_01.png) 30 round repeat;
+}
+@mixin custom_border_top(){
+	border-top: 5px solid transparent;
+	-webkit-border-image: url(../images/help_css/trait_header_01.png) 30 round repeat; /* Safari 3.1-5 */
+    -o-border-image: url(../images/help_css/trait_header_01.png) 30 round repeat; /* Opera 11-12.1 */
+    border-image: url(../images/help_css/trait_header_01.png) 30 round repeat;
+}
+
+@mixin block_text(){
+	margin: 10px 20px 0px 20px;
+	.title{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.content {
+		text-align: justify;
+	}
+}
+
+@mixin underline_text() {
+	border-bottom: solid 2px $blanc_menu;
+	display: inline;
+	padding-bottom: 2px;
+}
+
+/************************************************\
+==================================================
+CSS Global
+==================================================
+\************************************************/
+.mtop20 { margin-top: 20px; }
+.mtop30 { margin-top: 30px; }
+.mtop50 { margin-top: 50px; }
+
+// Font texte
+p, a, h1, h2, h3, h4, h5, h6, li{
+	font-family: "Calibri";
+}
+h1{
+	color: $rose;
+	letter-spacing: 4px;
+}
+
+h4 {
+	color: $rose;
+	font-size: 30px;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar-track:vertical
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: white;
+	border:1px $rose solid;
+	border-radius:10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: white;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 30px;
+	background-color: $rose;
+}

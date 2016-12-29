@@ -1,0 +1,57 @@
+/************************************************\
+==================================================
+Homepage
+==================================================
+\************************************************/
+
+#homepage{
+	.side_nav {
+		background-color: $bleu_fonce;
+		margin-top: -55px;
+		h3, h4,  li, a {
+			color: white;
+		}
+		h3, h4, li {
+			margin-left: 10px;
+		}
+		.title_actu_side_nav {
+			margin-top: 10px;
+	    	margin-bottom: 35px;
+		}
+		.title_video_side_nav {
+			margin-top: 10px;
+		}
+		.title_chaine_youtube {
+			margin-bottom: 40px;
+		}
+		ul {
+			list-style-image: url("../images/help_css/liste_puce_img.png");
+			padding-left: 17px;
+	    	li {
+	    		margin-top: 30px;
+	    		color: $blanc_menu;
+	    	}
+	    	a{
+	    		color: $blanc_menu;
+	    		font-weight: bold;
+	    		@include underline_text();
+	    	}
+	    	p {
+			    margin: 0 0 0px;
+			}
+		}
+	}
+
+	.block_text{
+		@include block_text();
+		.ranger_image_homepage {
+			margin-top: 50px;
+			width: 100%;
+		}
+		.text_picto{
+			color: $rose;
+			font-family: 'Indie Flower', cursive;
+			margin-top: 10px;
+		}
+	}
+}
