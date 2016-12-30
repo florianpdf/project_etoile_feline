@@ -1,59 +1,15 @@
 <?php
-include 'includes/header.php';
+/*
+Template Name: Profil d'un loulou
+*/
+get_header();
+
 ?>
 
 <div class="container">
-    <section id="adopter">
+    <section id="profil">
         <div class="row">
-            <div class="side_nav col-md-3">
-                <div class="link row">
-                    <ul>
-                        <li>
-                            <a href="#">Notre histoire</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">Notre action sur le terrain</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">Les trappages</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">Les sauvetages</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">es stérilisations</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">Les soins quotidiens</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                        <li>
-                            <a href="#">Ils font parti de l'asso'</a>
-                            <!--							<span><img src="assets/images/help_css/liste_puce_img.png" alt=""></span>-->
-                        </li>
-                    </ul>
-                </div>
-                <div class="logo row">
-                    <div class="col-md-3">
-                        <img src="assets/images/faire_un_don.jpg" alt="logo">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/faire_un_don.jpg" alt="logo">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/faire_un_don.jpg" alt="logo">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="assets/images/faire_un_don.jpg" alt="logo">
-                    </div>
-                </div>
-            </div>
-
+            <?php get_sidebar(); ?>
             <div class="col-md-9">
                 <div id="main_area">
                     <!-- Slider -->
@@ -211,7 +167,7 @@ include 'includes/header.php';
 </div>
 
 <?php
-include 'includes/footer.php';
+get_footer();
 ?>
 
 <script>

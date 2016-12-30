@@ -9,13 +9,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active"> 
-                    <img src="assets/images/img_slider/chat_1.jpg" style="width:100%; max-height: 90vh;" alt="First slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_slider/chat_1.jpg" style="width:100%; max-height: 90vh;" alt="First slide">
                 </div>
                 <div class="item"> 
-                    <img src="assets/images/img_slider/chat_2.jpg" style="width:100%; max-height: 90vh; data-src="" alt="Second    slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_slider/chat_2.jpg" style="width:100%; max-height: 90vh; data-src="" alt="Second    slide">
                 </div>
                 <div class="item"> 
-                    <img src="assets/images/img_slider/chat_3.jpg" style="width:100%; max-height: 90vh; data-src="" alt="Third slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_slider/chat_3.jpg" style="width:100%; max-height: 90vh; data-src="" alt="Third slide">
                 </div>
             </div>
         </div> 

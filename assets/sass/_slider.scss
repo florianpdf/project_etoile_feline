@@ -6,19 +6,19 @@
 
 .slider_head {
 	@include custom_border_bottom();
-	#myCarousel{
-		.carousel-indicators{
+	#myCarousel {
+		.carousel-indicators {
 			left: 107%;
 			width: 20%;
 			bottom: -10px;
-			li{
+			li {
 				width: 20px;
-	    		height: 20px;
-	    		margin: 8px;
-	    		background-color: $rose;
-	    		border: none;
+				height: 20px;
+				margin: 8px;
+				background-color: $rose;
+				border: none;
 			}
-			.active{
+			.active {
 				background-color: $rose;
 				opacity: 0.6;
 			}

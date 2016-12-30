@@ -1,16 +1,18 @@
-.kit {
-  padding: 15px;
-}
+#kit{
+  .kit {
+    padding: 15px;
+  }
 
-.texte1 {
-  text-align: right;
-  margin-top: 50px;
-}
+  .texte1 {
+    text-align: right;
+    margin-top: 50px;
+  }
 
-.texte2 {
-  text-align: left;
-}
+  .texte2 {
+    text-align: left;
+  }
 
-.thumbnail_kit {
-  width: 100%;
+  .thumbnail_kit {
+    width: 100%;
+  }
 }
