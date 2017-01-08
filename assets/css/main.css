@@ -4626,7 +4626,7 @@ p > video {
 @media screen and (min-width: 59.6875em) {
   /* line 4086, ../sass/main.scss */
   body:before {
-    background-color: #fff;
+    background-color: initial;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     content: "";
     display: block;
