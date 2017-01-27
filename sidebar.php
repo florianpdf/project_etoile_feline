@@ -1,4 +1,7 @@
 <div class="side_nav col-md-3">
+    <div class="spacer row">
+        
+    </div>
     <div class="link row">
         <?php if (is_page('Adopter')){ ?>
             <ul>

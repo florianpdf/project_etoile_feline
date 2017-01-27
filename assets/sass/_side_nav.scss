@@ -1,35 +1,51 @@
 .side_nav {
   z-index: 1;
-  background-color: $bleu_fonce;
   padding-right: 0;
   h3, h4,  li, a {
     color: white;
   }
-  .link ul {
-    margin-top: 70%;
-    list-style: none;
-    padding-left: 0px;
-    li:first-child{
-      font-weight: bold;
-    }
-    li {
-      margin: 15px 0px;
-      padding: 5px 0px;
-      height: 100%;
-      a{
-        margin-left: 15px;
+  .spacer{
+    padding-top: 70%;
+    background-color: $bleu_fonce;
+    margin-right: 0 !important;
+  }
+  .link {
+    margin-right: 0 !important;
+    border-right: 4px solid transparent;
+    -webkit-border-image-source: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image-source: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch;
+    background-color: $bleu_fonce; 
+    ul{
+      list-style: none;
+      padding-left: 0px;
+      li:first-child{
+        font-weight: bold;
       }
-    }
-    li:hover{
-      z-index: 2;
-      background-image: url(../images/help_css/Pastille_menu_01.png);
-      background-size: cover;
-
+      li {
+        width:107%;
+        list-style-type: none; /* on annule la puce par défaut */
+        background-image: url('../images/help_css/Pastille_menu_02.png'); /* on affiche l'image souhaitée */
+        background-repeat: no-repeat; /* on annule la répétition par défaut */
+        background-position: 97%; /* on positionne où l'on veut */
+        padding: 5px 0px;
+        height: 100%;
+        a{
+          margin-left: 15px;
+        }
+      }
+      li:hover{
+        z-index: 2;
+        background-image: url(../images/help_css/Pastille_menu_01.png);
+        background-size: cover;
+      }
     }
   }
   .logo{
+    margin-right: 0 !important;
     img{
       width: 100%;
     }
   }
 }
+

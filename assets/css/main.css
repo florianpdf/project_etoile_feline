@@ -15796,40 +15796,67 @@ header nav li:nth-child(-n+3) {
 /* line 1, ../sass/_side_nav.scss */
 .side_nav {
   z-index: 1;
-  background-color: rgba(55, 62, 72, 0.9);
   padding-right: 0;
 }
-/* line 5, ../sass/_side_nav.scss */
+/* line 4, ../sass/_side_nav.scss */
 .side_nav h3, .side_nav h4, .side_nav li, .side_nav a {
   color: white;
 }
-/* line 8, ../sass/_side_nav.scss */
+/* line 7, ../sass/_side_nav.scss */
+.side_nav .spacer {
+  padding-top: 70%;
+  background-color: rgba(55, 62, 72, 0.9);
+  margin-right: 0 !important;
+}
+/* line 12, ../sass/_side_nav.scss */
+.side_nav .link {
+  margin-right: 0 !important;
+  border-right: 4px solid transparent;
+  -webkit-border-image-source: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch;
+  /* Safari 3.1-5 */
+  -o-border-image-source: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch;
+  /* Opera 11-12.1 */
+  border-image: url(../images/help_css/trait-menu_milieu_01.png) 30 stretch;
+  background-color: rgba(55, 62, 72, 0.9);
+}
+/* line 19, ../sass/_side_nav.scss */
 .side_nav .link ul {
-  margin-top: 70%;
   list-style: none;
   padding-left: 0px;
 }
-/* line 12, ../sass/_side_nav.scss */
+/* line 22, ../sass/_side_nav.scss */
 .side_nav .link ul li:first-child {
   font-weight: bold;
 }
-/* line 15, ../sass/_side_nav.scss */
+/* line 25, ../sass/_side_nav.scss */
 .side_nav .link ul li {
-  margin: 15px 0px;
+  width: 107%;
+  list-style-type: none;
+  /* on annule la puce par défaut */
+  background-image: url("../images/help_css/Pastille_menu_02.png");
+  /* on affiche l'image souhaitée */
+  background-repeat: no-repeat;
+  /* on annule la répétition par défaut */
+  background-position: 97%;
+  /* on positionne où l'on veut */
   padding: 5px 0px;
   height: 100%;
 }
-/* line 19, ../sass/_side_nav.scss */
+/* line 33, ../sass/_side_nav.scss */
 .side_nav .link ul li a {
   margin-left: 15px;
 }
-/* line 23, ../sass/_side_nav.scss */
+/* line 37, ../sass/_side_nav.scss */
 .side_nav .link ul li:hover {
   z-index: 2;
   background-image: url(../images/help_css/Pastille_menu_01.png);
   background-size: cover;
 }
-/* line 31, ../sass/_side_nav.scss */
+/* line 44, ../sass/_side_nav.scss */
+.side_nav .logo {
+  margin-right: 0 !important;
+}
+/* line 46, ../sass/_side_nav.scss */
 .side_nav .logo img {
   width: 100%;
 }
